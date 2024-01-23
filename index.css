@@ -1,9 +1,37 @@
-p {
-  background-color: hsl(180, 66%, 49%);
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219, 12%, 42%);
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 5rem;
+  padding: 2rem;
+  max-width: 50rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post {
+  display: flex;
 }
 
 .attribution {
+  margin-top: 8rem;
   font-size: 11px;
   text-align: center;
 }
