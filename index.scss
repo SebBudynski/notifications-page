@@ -1,0 +1,14 @@
+$blue-bg: hsl(180, 66%, 49%);
+
+p {
+  background-color: $blue-bg;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
