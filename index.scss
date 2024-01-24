@@ -20,29 +20,73 @@ body {
   min-height: 100vh;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: $dark-grayish-blue;
-  background-color: $very-light-grayish-blue;
+  background-color: darkgrey;
   display: flex;
   justify-content: center;
 }
 
 main {
-    background-color: $white;
-  margin-top: 5rem;
+  margin: 5rem 0;
   padding: 2rem;
   max-width: 50rem;
 }
 
+.container {
+  background-color: $white;
+  padding: 2rem;
+}
 .top {
   display: flex;
   justify-content: space-between;
 }
 
-.post{
-    display: flex;
+.post,
+.comment {
+  display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: $light-grayish-blue-1;
+}
+
+.post {
+  gap: 1rem;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.mark-all {
+  font-weight: 500;
+}
+
+.user {
+  margin-right: 4px;
+}
+
+.activity {
+  margin-left: 4px;
+}
+
+.user-avatar {
+  width: 3rem;
+}
+
+.user-avatar img {
+  width: 100%;
+}
+
+.comment {
+  border: solid 1px $light-grayish-blue-2;
+  background-color: inherit;
+  margin-left: 5rem;
 }
 
 .attribution {
-    margin-top: 8rem;
+  margin-top: 8rem;
   font-size: 11px;
   text-align: center;
   a {

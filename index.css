@@ -9,16 +9,20 @@ body {
   min-height: 100vh;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: hsl(219, 12%, 42%);
-  background-color: hsl(210, 60%, 98%);
+  background-color: darkgrey;
   display: flex;
   justify-content: center;
 }
 
 main {
-  background-color: hsl(0, 0%, 100%);
-  margin-top: 5rem;
+  margin: 5rem 0;
   padding: 2rem;
   max-width: 50rem;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
 }
 
 .top {
@@ -26,8 +30,49 @@ main {
   justify-content: space-between;
 }
 
-.post {
+.post,
+.comment {
   display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: hsl(211, 68%, 94%);
+}
+
+.post {
+  gap: 1rem;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.mark-all {
+  font-weight: 500;
+}
+
+.user {
+  margin-right: 4px;
+}
+
+.activity {
+  margin-left: 4px;
+}
+
+.user-avatar {
+  width: 3rem;
+}
+
+.user-avatar img {
+  width: 100%;
+}
+
+.comment {
+  border: solid 1px hsl(205, 33%, 90%);
+  background-color: inherit;
+  margin-left: 5rem;
 }
 
 .attribution {
