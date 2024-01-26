@@ -16,7 +16,7 @@ body {
 main {
   margin: 5rem 0;
   padding: 2rem;
-  max-width: 50rem;
+  max-width: 52rem;
 }
 
 .container {
@@ -42,6 +42,18 @@ main {
 }
 .top button {
   font-weight: 500;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red-dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: red;
+  border-radius: 50%;
 }
 
 .post,

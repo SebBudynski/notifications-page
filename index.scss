@@ -27,7 +27,7 @@ body {
 main {
   margin: 5rem 0;
   padding: 2rem;
-  max-width: 50rem;
+  max-width: 52rem;
 }
 
 .container {
@@ -48,7 +48,7 @@ main {
   span {
     background-color: $very-dark-blue;
     color: $white;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     border-radius: 5px;
     margin-left: 3px;
   }
@@ -56,6 +56,18 @@ main {
   button {
     font-weight: 500;
   }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red-dot {
+  width: .7rem;
+  height: .7rem;
+  background-color: red;
+  border-radius: 50%;
 }
 
 .post,
@@ -102,10 +114,8 @@ button {
 
 .user-avatar {
   width: 3rem;
-
-  
 }
-#picture{
+#picture {
   margin-left: auto;
 }
 
