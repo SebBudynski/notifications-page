@@ -8,8 +8,7 @@
 body {
   min-height: 100vh;
   font-family: "Plus Jakarta Sans", sans-serif;
-  color: hsl(219, 12%, 42%);
-  background-color: darkgrey;
+  background-color: hsl(210, 60%, 98%);
   display: flex;
   justify-content: center;
 }
@@ -23,11 +22,26 @@ main {
 .container {
   background-color: hsl(0, 0%, 100%);
   padding: 2rem;
+  border-radius: 10px;
 }
 
 .top {
   display: flex;
   justify-content: space-between;
+}
+.top p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.top span {
+  background-color: hsl(224, 21%, 14%);
+  color: hsl(0, 0%, 100%);
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+.top button {
+  font-weight: 500;
 }
 
 .post,
@@ -35,6 +49,16 @@ main {
   display: flex;
   padding: 1rem;
   margin-top: 1rem;
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 5px;
+}
+
+.comment {
+  margin-bottom: 3rem;
+  padding: 1rem 1.4rem;
+}
+
+.comment:hover {
   background-color: hsl(211, 68%, 94%);
 }
 
@@ -42,15 +66,16 @@ main {
   gap: 1rem;
 }
 
+.time {
+  color: hsl(219, 14%, 63%);
+}
+
 button {
   border: none;
   background-color: inherit;
   font-weight: 800;
   font-size: 1rem;
-}
-
-.mark-all {
-  font-weight: 500;
+  cursor: pointer;
 }
 
 .user {
@@ -63,6 +88,10 @@ button {
 
 .user-avatar {
   width: 3rem;
+}
+
+#picture {
+  margin-left: auto;
 }
 
 .user-avatar img {
