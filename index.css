@@ -43,17 +43,23 @@ main {
 .top button {
   font-weight: 500;
 }
+.top button:hover {
+  color: hsl(219, 85%, 26%);
+}
 
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+}
+.wrapper span {
+  font-size: 5rem;
+  line-height: 1px;
 }
 
 .red-dot {
-  width: 0.7rem;
-  height: 0.7rem;
-  background-color: red;
-  border-radius: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.2rem 0 0 0.3rem;
 }
 
 .post,
@@ -65,13 +71,20 @@ main {
   border-radius: 5px;
 }
 
+#hidden {
+  display: none;
+}
+
 .comment {
+  background-color: inherit;
+  margin-left: 5rem;
+  border: solid 1px hsl(205, 33%, 90%);
   margin-bottom: 3rem;
   padding: 1rem 1.4rem;
 }
-
 .comment:hover {
   background-color: hsl(211, 68%, 94%);
+  cursor: pointer;
 }
 
 .post {
@@ -88,6 +101,9 @@ button {
   font-weight: 800;
   font-size: 1rem;
   cursor: pointer;
+}
+button:hover {
+  color: hsl(219, 85%, 26%);
 }
 
 .user {
@@ -110,10 +126,8 @@ button {
   width: 100%;
 }
 
-.comment {
-  border: solid 1px hsl(205, 33%, 90%);
+.readed {
   background-color: inherit;
-  margin-left: 5rem;
 }
 
 .attribution {

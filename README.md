@@ -1,11 +1,3 @@
-Notification z liczbą nieprzeczytanych tematów i w tej samej lini button ,, mark all as riden''- przycisk ma powodować że z wszystkich postów zostanei usunięta czerwona kropka 
-
-
-
-
-
-
-
 
 
 
