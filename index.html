@@ -10,13 +10,13 @@
       href="./assets/images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Notifications page</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style/index.css" />
   </head>
   <body>
     <main>
       <div class="container">
         <div class="top">
-          <p>Notifications <span>3</span></p>
+          <p>Notifications <span id="counter">0</span></p>
           <button class="mark-all">Mark all as read</button>
         </div>
         <div class="post">
@@ -105,12 +105,12 @@
             <p class="time">1 week ago</p>
           </div>
           <div class="user-avatar" id="picture">
-            <img src="assets/images/image-chess.webp" alt="chess image" />
+            <img src="assets/images/image-chess.webp" alt="chess player image" />
           </div>
         </div>
         <div class="post">
           <div class="user-avatar">
-            <img
+            <img id="nathan"
               src="assets/images/avatar-nathan-peterson.webp"
               alt="user avatar"
             />
