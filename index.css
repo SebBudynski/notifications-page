@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
-@import  "variables.scss";
 * {
   margin: 0;
   padding: 0;
@@ -8,19 +7,18 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  background-color: $very-light-grayish-blue;
+  background-color: hsl(210, 60%, 98%);
   display: flex;
   justify-content: center;
 }
 
 main {
-  margin: 5rem 0;
   padding: 2rem;
   max-width: 52rem;
 }
 
 .container {
-  background-color: $white;
+  background-color: hsl(0, 0%, 100%);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -28,36 +26,32 @@ main {
 .top {
   display: flex;
   justify-content: space-between;
-
-  p {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-
-  span {
-    background-color: $very-dark-blue;
-    color: $white;
-    padding: 0 0.5rem;
-    border-radius: 5px;
-    margin-left: 3px;
-  }
-
-  button {
-    font-weight: 500;
-    &:hover {
-      color: $primary-blue;
-    }
-  }
+}
+.top p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.top span {
+  background-color: hsl(224, 21%, 14%);
+  color: hsl(0, 0%, 100%);
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+.top button {
+  font-weight: 500;
+}
+.top button:hover {
+  color: hsl(219, 85%, 26%);
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-
-  span {
-    font-size: 5rem;
-    line-height: 1px;
-  }
+}
+.wrapper span {
+  font-size: 5rem;
+  line-height: 1px;
 }
 
 .red-dot {
@@ -71,23 +65,24 @@ main {
   display: flex;
   padding: 1rem;
   margin-top: 1rem;
-  background-color: $very-light-grayish-blue;
+  background-color: hsl(210, 60%, 98%);
   border-radius: 5px;
 }
 
 #hidden {
   display: none;
 }
+
 .comment {
   background-color: inherit;
   margin-left: 5rem;
-  border: solid 1px $light-grayish-blue-2;
+  border: solid 1px hsl(205, 33%, 90%);
   margin-bottom: 3rem;
   padding: 1rem 1.4rem;
-  &:hover {
-    background-color: $light-grayish-blue-1;
-    cursor: pointer;
-  }
+}
+.comment:hover {
+  background-color: hsl(211, 68%, 94%);
+  cursor: pointer;
 }
 
 .post {
@@ -96,7 +91,7 @@ main {
 }
 
 .time {
-  color: $grayish-blue;
+  color: hsl(219, 14%, 63%);
 }
 
 button {
@@ -105,9 +100,9 @@ button {
   font-weight: 800;
   font-size: 1rem;
   cursor: pointer;
-  &:hover {
-    color: $primary-blue;
-  }
+}
+button:hover {
+  color: hsl(219, 85%, 26%);
 }
 
 .user {
@@ -142,7 +137,7 @@ button {
   margin-top: 8rem;
   font-size: 11px;
   text-align: center;
-  a {
-    color: hsl(228, 45%, 44%);
-  }
 }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=index.css.map */
