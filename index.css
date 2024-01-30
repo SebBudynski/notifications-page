@@ -28,7 +28,8 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.top p, .top h1 {
+.top p,
+.top h1 {
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -57,11 +58,14 @@ main {
 .wrapper button {
   margin: 0 0.25rem;
 }
-
-.red-dot {
-  width: 0.8rem;
-  height: 0.8rem;
-  margin: 0.2rem 0 0 0.3rem;
+.wrapper p:first-of-type::after {
+  content: "";
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 0.25rem;
 }
 
 .post,

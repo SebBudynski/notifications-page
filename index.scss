@@ -30,7 +30,8 @@ main {
   display: flex;
   justify-content: space-between;
 
-  p, h1 {
+  p,
+  h1 {
     font-size: 1.2rem;
     font-weight: 700;
   }
@@ -60,15 +61,19 @@ main {
     line-height: 1px;
   }
 
-  button{
-    margin: 0 .25rem;
+  button {
+    margin: 0 0.25rem;
   }
-}
 
-.red-dot {
-  width: 0.8rem;
-  height: 0.8rem;
-  margin: 0.2rem 0 0 0.3rem;
+  p:first-of-type::after {
+    content: "";
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left:.25rem;
+  }
 }
 
 .post,
@@ -162,7 +167,7 @@ button {
     font-size: 0.8rem;
     padding: 0.5rem;
     gap: 0.5rem;
-    margin-top:.5rem;
+    margin-top: 0.5rem;
     button {
       font-size: 0.8rem;
     }
