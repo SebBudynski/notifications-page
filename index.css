@@ -55,9 +55,6 @@ main {
   font-size: 5rem;
   line-height: 1px;
 }
-.wrapper button {
-  margin: 0 0.25rem;
-}
 .wrapper p:first-of-type::after {
   content: "";
   background-color: red;
@@ -97,13 +94,11 @@ main {
 
 .time {
   color: hsl(219, 14%, 63%);
-  margin-left: 0.25rem;
 }
 
 button {
   border: none;
   background-color: inherit;
-  font-weight: 800;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -129,6 +124,9 @@ button:hover {
 
 .readed {
   background-color: inherit;
+}
+.readed p:first-of-type::after {
+  display: none;
 }
 
 #hidden {
@@ -158,9 +156,6 @@ button:hover {
     padding: 0.5rem;
     gap: 0.5rem;
     margin-top: 0.5rem;
-  }
-  .post button {
-    font-size: 0.8rem;
   }
   .user-avatar img {
     width: 2.5rem;
