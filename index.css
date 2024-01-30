@@ -54,6 +54,10 @@ main {
   font-size: 5rem;
   line-height: 1px;
 }
+.wrapper p {
+  display: flex;
+  gap: 4px;
+}
 
 .red-dot {
   width: 0.8rem;
@@ -103,24 +107,16 @@ button:hover {
   color: hsl(219, 85%, 26%);
 }
 
-.user {
-  margin-right: 4px;
-}
-
-.activity {
-  margin-left: 4px;
-}
-
 .user-avatar {
   width: 3rem;
 }
 
-#picture {
-  margin-left: auto;
-}
-
 .user-avatar img {
   width: 100%;
+}
+
+#picture {
+  margin-left: auto;
 }
 
 #nathan {
